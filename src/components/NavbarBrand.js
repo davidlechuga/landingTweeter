@@ -1,8 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import twitterstats from '../assets/image/twitterstats.png'
 
-function NavbarBrand (){
+
+function NavbarBrand ({to}){
   return(
-      <h1>hola</h1>
+
+    <Link
+      className='navbar-brand'
+      to={to}
+    >
+      <img alt="twitterstats" src={twitterstats}></img>
+
+    </Link>
   )
 }
 
